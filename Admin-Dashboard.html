@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin | Dashboard</title>
+  <link rel="stylesheet" href="style-admin-system.css" />
+</head>
+
+
+
+<body>
+  <!-- UPPER GAP SPACING -->
+  <div class="top-gap"></div>
+
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="image-sti-global-city.jpg" alt="STI Logo" />
+      <span><b>STI Global City Paging System</b></span>
+    </div>
+    
+    
+    <!-- NAVIGATION -->
+    <nav>
+      <button class="menu-btn">☰</button>
+      <div class="nav-links">
+        <a href="#" class="logout-link">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- LOGOUT CONFIRMATION MODAL -->
+  <div id="logoutModal" class="modal-overlay">
+    <div class="modal-box">
+      <h2>Confirm Logout</h2>
+      <br />
+      <p>Are you sure you want to logout?</p>
+      <div class="modal-buttons">
+        <button id="confirmLogout" class="confirm-btn">Yes</button>
+        <button id="cancelLogout" class="cancel-btn">No</button>
+      </div>
+    </div>
+  </div>
+
+  
+ <!-- MAIN LAYOUT: SIDEBAR + MAIN CONTENT -->
+  <div class="container">
+
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <ul class="sidebar-menu">
+        <li class="menu-item active">
+          <a href="Admin-Dashboard.html">
+            <img src="icon-admin-home.png" alt="Admin Home" />
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="Admin-Paging-Request.html">
+            <img src="icon-admin-paging-request.png" alt="Admin Paging Request" />
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="Admin-Faculty-Status.html">
+            <img src="icon-admin-faculty-status.png" alt="Admin Faculty Status" />
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="Admin-Settings.html">
+            <img src="icon-admin-settings.png" alt="Admin Settings" />
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="Admin-Help-and-Support.html">
+            <img src="icon-admin-help-and-support.png" alt="Admin Help and Support" />
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+
+     <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <section class="dashboard-header">
+        <div class="tabs-and-search">
+          <div class="dashboard-tabs">
+            <button class="tab active" data-filter="online">ONLINE - 04</button>
+            <button class="tab" data-filter="all">ALL</button>
+            <button class="tab" data-filter="offline">OFFLINE</button>
+          </div>
+    
+          <div class="search-wrapper">
+            <button class="search-icon">
+              <img src="icon-search.png" alt="Search" />
+            </button>
+            <input type="text" class="search-bar" placeholder="Search" />
+          </div>
+        </div>
+    
+        
+      </section>
+    
+ <div class="top-bar">
+  <p class="teacher-count">TEACHER'S OVERALL: <b>2,109</b></p>
+  <div class="icon-buttons">
+    <button><img src="icon-add.png" alt="Add" /></button>
+    <button><img src="icon-delete.png" alt="Delete" /></button>
+    <button><img src="icon-refresh.png" alt="Refresh" /></button>
+  </div>
+</div>
+
+
+<section class='faculty-table'>
+  <table>
+    <thead>
+      <tr>
+        <th><input type="checkbox" /></th>
+        <th>FACULTY ID</th>
+        <th>NOTES</th>
+        <th>MISSED CALL WINDOW</th>
+        <th>ACTIONS</th>
+      </tr>
+    </thead>
+    <tbody id="faculty-table-body">
+      <tr data-status="online">
+        <td><input type="checkbox" /></td>
+        <td>0200016839284736</td>
+        <td>Available</td>
+        <td>1/3</td>
+        <td class="actions">
+          <a href="#"><img src="icon-content-edit.png" alt="Edit"></a>
+          <a href="#"><img src="icon-content-delete.png" alt="Delete"></a>
+          <a href="#"><img src="icon-content-message.png" alt="Message"></a>
+        </td>
+      </tr>
+      <tr class="highlight" data-status="online">
+        <td><input type="checkbox" /></td>
+        <td>0200012367823562</td>
+        <td>Available</td>
+        <td>2/3</td>
+        <td class="actions">
+          <a href="#"><img src="icon-content-edit.png" alt="Edit"></a>
+          <a href="#"><img src="icon-content-delete.png" alt="Delete"></a>
+          <a href="#"><img src="icon-content-message.png" alt="Message"></a>
+        </td>
+      </tr>
+      <tr data-status="online">
+        <td><input type="checkbox" /></td>
+        <td>0200016839284736</td>
+        <td>Available</td>
+        <td>0/3</td>
+        <td class="actions">
+          <a href="#"><img src="icon-content-edit.png" alt="Edit"></a>
+          <a href="#"><img src="icon-content-delete.png" alt="Delete"></a>
+          <a href="#"><img src="icon-content-message.png" alt="Message"></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+    </div>
+  </div>
+</div>
+  <!-- END OF THE .container -->
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+
+
+      <!-- LEFT: LOGOS AND ICONS -->
+      <div class="footer-logos">
+        <a href="https://www.sti.edu/campuses-details.asp?campus_id=R0xP&gad" target="_blank" title="STI Website">
+          <img src="image-sti-global-city.jpg" alt="STI Logo" />
+        </a>
+        <a href="https://www.facebook.com/globalcity.sti.edu" target="_blank" title="Facebook">
+          <img src="image-facebook.png" alt="Facebook Icon" />
+        </a>
+        <a href="https://www.instagram.com/sticollegeglobalcity/" target="_blank" title="Instagram">
+          <img src="image-instagram.png" alt="Instagram Icon" />
+        </a>
+      </div>
+
+
+      <!-- CENTER: TEXT -->
+      <div class="footer-text">
+        <p><b>STI Global City Paging System</b></p>
+        <p>&copy; <i>2025 STI College Global City.<br />All rights reserved.</i></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="login-script.js"></script>
+</body>
+</html>

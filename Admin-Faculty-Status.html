@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin | Faculty Status</title>
+  <link rel="stylesheet" href="style-admin-system.css" />
+</head>
+
+
+
+<body>
+  <!-- UPPER GAP SPACING -->
+  <div class="top-gap"></div>
+
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="image-sti-global-city.jpg" alt="STI Logo" />
+      <span><b>STI Global City Paging System</b></span>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <button class="menu-btn">☰</button>
+      <div class="nav-links">
+        <a href="Admin-Dashboard.html">Home</a>
+        <a href="#" class="logout-link">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- LOGOUT CONFIRMATION MODAL -->
+  <div id="logoutModal" class="modal-overlay">
+    <div class="modal-box">
+      <h2>Confirm Logout</h2>
+      <br />
+      <p>Are you sure you want to logout?</p>
+      <div class="modal-buttons">
+        <button id="confirmLogout" class="confirm-btn">Yes</button>
+        <button id="cancelLogout" class="cancel-btn">No</button>
+      </div>
+    </div>
+  </div>
+
+
+ <!-- MAIN LAYOUT: SIDEBAR + MAIN CONTENT -->
+  <div class="container">
+    
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <ul class="sidebar-menu">
+        <li class="menu-item active">
+          <a href="Admin-Dashboard.html">
+            <img src="icon-admin-home.png" alt="Admin Home" />
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="Admin-Paging-Request.html">
+            <img src="icon-admin-paging-request.png" alt="Admin Paging Request" />
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="Admin-Faculty-Status.html">
+            <img src="icon-admin-faculty-status.png" alt="Admin Faculty Status" />
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="Admin-Settings.html">
+            <img src="icon-admin-settings.png" alt="Admin Settings" />
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="Admin-Help-and-Support.html">
+            <img src="icon-admin-help-and-support.png" alt="Admin Help and Support" />
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="helpdesk-container">
+        <div class="helpdesk-card">
+          <div class="helpdesk-header">
+            <h1>Admin Faculty Status</h1>
+          </div>
+          <div class="helpdesk-content">
+            <p>Welcome to the STI Global City Paging System Helpdesk!</p><br />
+            <p>Here you can view the statics of per department being paged in the paging system.</p><br />
+            <p>However, the team is currently developing the paging system. Please wait for further notice. Thank you.</p><br />
+            <p>For any inquiries or issues, please reach out to us through the following channels:</p>
+            <ul>
+              <li>
+                <strong>Email us:</strong>
+                <a href="mailto:globalcity.paging@gmail.com">globalcity.paging@gmail.com</a>
+              </li>
+              <li>
+                <strong>Contact us:</strong>
+                <a href="tel:+639123456789">+63 912 345 6789</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- END OF THE .container -->
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+
+
+      <!-- LEFT: LOGOS AND ICONS -->
+      <div class="footer-logos">
+        <a href="https://www.sti.edu/campuses-details.asp?campus_id=R0xP&gad" target="_blank" title="STI Website">
+          <img src="image-sti-global-city.jpg" alt="STI Logo" />
+        </a>
+        <a href="https://www.facebook.com/globalcity.sti.edu" target="_blank" title="Facebook">
+          <img src="image-facebook.png" alt="Facebook Icon" />
+        </a>
+        <a href="https://www.instagram.com/sticollegeglobalcity/" target="_blank" title="Instagram">
+          <img src="image-instagram.png" alt="Instagram Icon" />
+        </a>
+      </div>
+
+
+      <!-- CENTER: TEXT -->
+      <div class="footer-text">
+        <p><b>STI Global City Paging System</b></p>
+        <p>&copy; <i>2025 STI College Global City. <br />All rights reserved.</i></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="login-script.js"></script>
+</body>
+</html>

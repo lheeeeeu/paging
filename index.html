@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | STI Global City Paging System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+
+<body>
+  <!-- UPPER GAP SPACING -->
+   <div class="top-gap"></div>
+
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="image-sti-global-city.jpg" alt="STI Logo" />
+      <span><b>STI Global City Paging System</b></span>
+    </div>
+    
+
+
+  <!-- NAVIGATION -->
+  <nav>
+    <button class="menu-btn">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="Login-CampusHeldesk.html">Campus Helpdesk</a>
+      <a href="Login-FAQs.html">FAQs</a>
+
+
+
+      <!-- DESKTOP SWITCH LOGIN -->
+      <div class="login-switch">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+
+
+      <!-- MOBILE SWITCH LOGIN -->
+      <a href="javascript:void(0);" class="login-button-mobile mobile-login-link">Login</a>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- VIDEO OF STI -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline preload="auto">
+    <source src="video-homepage-paging.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+
+<!-- PREFOOTER -->
+ <div class="pre-footer">
+  <div class="pre-footer-content">
+    
+
+    <!-- LEFT SIDE -->
+    <div class="pre-footer-left">
+       <img src="paging-courses.png" alt="Campus Paging" class="footer-image">
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="pre-footer-right">
+      <p><strong>The STI Global City Paging System</strong> is a simple paging platform that enables efficient communication between faculty and students. It sends SMS notifications, allowing faculty members to respond promptly and effectively.</p>
+      <p>Want to know more about STI? Click the Proceed button below.</p> <br>
+      <a href="https://www.sti.edu" class="proceed-button">Proceed</a>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>LOG IN</h5>
+        <span class="close">&times;</span>
+      </div>
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="userid" placeholder="Enter your username" required/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required/>
+        <div class="loginOptions">
+        <div class="remember-me">
+        <input type="checkbox" id="remember" name="remember_me" />
+        <label for="remember">Remember me</label>
+      </div>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+        <button id="submitLogin" type="submit">Login</button>
+      </form>
+        <p class="continue-text">
+        <a href="Student-PagingDashboard.html"><b>Continue to Student Paging</b></a> </p>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="footer-container">
+
+
+      <!-- LEFT: LOGOS AND ICONS -->
+      <div class="footer-logos">
+        <a href="https://www.sti.edu/campuses-details.asp?campus_id=R0xP&gad" target="_blank" title="STI Website">
+          <img src="image-sti-global-city.jpg" alt="STI Logo" />
+        </a>
+        <a href="https://www.facebook.com/globalcity.sti.edu" target="_blank" title="Facebook">
+          <img src="image-facebook.png" alt="Facebook Icon" />
+        </a>
+        <a href="https://www.instagram.com/sticollegeglobalcity/" target="_blank" title="Instagram">
+          <img src="image-instagram.png" alt="Instagram Icon" />
+        </a>
+      </div>
+
+
+      <!-- CENTER: TEXT -->
+      <div class="footer-text">
+        <p><b>STI Global City Paging System</b></p>
+        <p>&copy; <i>2025 STI College Global City.<br />All rights reserved.</i></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="login-script.js"></script>
+</body>
+</html>

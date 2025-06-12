@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQs | STI Global City Paging System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+
+
+<body>
+  <!-- UPPER GAP SPACING -->
+   <div class="top-gap"></div>
+
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="image-sti-global-city.jpg" alt="STI Logo" />
+      <span><b>STI Global City Paging System</b></span>
+    </div>
+    
+
+
+  <!-- NAVIGATION -->
+  <nav>
+    <button class="menu-btn">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="Login-CampusHeldesk.html">Campus Helpdesk</a>
+      <a href="Login-FAQs.html">FAQs</a>
+
+
+
+      <!-- DESKTOP SWITCH LOGIN -->
+      <div class="login-switch">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+
+
+      <!-- MOBILE SWITCH LOGIN -->
+      <a href="javascript:void(0);" class="login-button-mobile mobile-login-link">Login</a>
+    </div>
+  </nav>
+</header>
+
+
+
+  <!-- FREQUENTLY ASKED QUESTIONS -->
+  <h1>Frequently Asked Questions (FAQs)</h1>
+  <div class="helpdesk-grid">
+
+
+  <!-- STUDENT FAQS -->
+    <div class="helpdesk-card student-faq">
+      <div class="helpdesk-header"><h1>Student</h1></div>
+        <div class="helpdesk-content">
+
+    <!-- STUDENT QUESTION 1 -->
+          <button class="accordion-btn">Q1: How can I send a page to a professor?</button>
+            <div class="accordion-content">
+              <p>Answer for Q1 goes here...</p>
+            </div>
+    
+    <!-- STUDENT QUESTION 2 -->
+          <button class="accordion-btn">Q2: Will I receive notifications when a professor responds?</button>
+            <div class="accordion-content">
+              <p>Answer for Q2 goes here...</p>
+            </div>
+
+    <!-- STUDENT QUESTION 3 -->
+          <button class="accordion-btn">Q3: Where to check notifications?</button>
+            <div class="accordion-content">
+              <p>Answer for Q3 goes here...</p>
+          </div>
+
+    <!-- STUDENT QUESTION 4 -->
+          <button class="accordion-btn">Q4: What is the procedure for handling technical issues in the system?</button>
+            <div class="accordion-content">
+              <p>Answer for Q4 goes here...</p>
+          </div>
+
+    <!-- STUDENT QUESTION 5 -->
+          <button class="accordion-btn">Q5: What is the purpose of this paging system?</button>
+            <div class="accordion-content">
+              <p>Answer for Q5 goes here...</p>
+          </div>
+      </div>
+    </div>
+
+
+  <!-- PROFESSOR FAQS -->
+    <div class="helpdesk-card professor-faq">
+      <div class="helpdesk-header"><h1>Teacher</h1></div>
+        <div class="helpdesk-content">
+
+    <!-- PROFESSOR QUESTION 1 -->
+          <button class="accordion-btn">Q1: How do I access paging requests from students?</button>
+            <div class="accordion-content">
+              <p>Answer for Q1 goes here...</p>
+          </div>
+
+    <!-- PROFESSOR QUESTION 2 -->
+          <button class="accordion-btn">Q2: Can I manage my availability for paging?</button>
+            <div class="accordion-content">
+              <p>Answer for Q2 goes here...</p>
+          </div>
+
+    <!-- PROFESSOR QUESTION 3 -->
+          <button class="accordion-btn">Q3: How do I respond to a paging request?</button>
+              <div class="accordion-content">
+              <p>Answer for Q3 goes here...</p>
+          </div>
+
+    <!-- PROFESSOR QUESTION 4 -->
+        <button class="accordion-btn">Q4: What if I miss a paging notification?</button>
+        <div class="accordion-content">
+          <p>Answer for Q4 goes here...</p>
+        </div>
+
+    <!-- PROFESSOR QUESTION 5 -->
+        <button class="accordion-btn">Q5: Who do I contact if I have issues with the system?</button>
+        <div class="accordion-content">
+          <p>Answer for Q5 goes here...</p>
+        </div>
+      </div>
+    </div>
+
+
+ <!-- PROGRAM HEAD FAQs -->
+  <div class="helpdesk-card program-head-faq">
+    <div class="helpdesk-header"><h1>Program Head</h1></div>
+      <div class="helpdesk-content">
+
+    <!-- PROGRAM HEAD QUESTION 1 -->
+        <button class="accordion-btn">Q1.  How do I monitor paging activity within my department?</button>
+        <div class="accordion-content">
+          <p>Log in to the admin dashboard to view all paging requests and responses related to your program.</p>
+        </div>
+
+    <!-- PROGRAM HEAD QUESTION 2 -->
+        <button class="accordion-btn">Q2: Can I manage professor accounts in the system?</button>
+        <div class="accordion-content">
+          <p>Yes, you can add, update, or deactivate professor accounts under your program.</p>
+        </div>
+
+    <!-- PROGRAM HEAD QUESTION 3 -->
+        <button class="accordion-btn">Q3: How do I receive system notifications or reports?</button>
+        <div class="accordion-content">
+          <p>Notifications and reports are sent to your registered email address automatically.</p>
+        </div>
+
+    <!-- PROGRAM HEAD QUESTION 4 -->
+        <button class="accordion-btn">Q4: What is the procedure for handling technical issues  in the system?</button>
+        <div class="accordion-content">
+          <p>Answer for Q4 goes here...</p>
+        </div>
+
+    <!-- PROGRAM HEAD QUESTION 5 -->
+        <button class="accordion-btn">Q5: How can I provide feedback or suggest improvements for the system?</button>
+        <div class="accordion-content">
+          <p>Answer for Q5 goes here...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>LOG IN</h5>
+        <span class="close">&times;</span>
+      </div>
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="userid" placeholder="Enter your username" required/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required/>
+        <div class="loginOptions">
+        <div class="remember-me">
+        <input type="checkbox" id="remember" name="remember_me" />
+        <label for="remember">Remember me</label>
+      </div>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+        <button id="submitLogin" type="submit">Login</button>
+      </form>
+        <p class="continue-text">
+        <a href="Student-PagingDashboard.html"><b>Continue to Student Paging</b></a> </p>
+    </div>
+  </div>
+
+
+  
+  <!-- FOOTER -->
+  <footer>
+  <div class="footer-container">
+
+
+      <!-- LEFT: LOGOS AND ICONS -->
+      <div class="footer-logos">
+        <a href="https://www.sti.edu/campuses-details.asp?campus_id=R0xP&gad" target="_blank" title="STI Website">
+          <img src="image-sti-global-city.jpg" alt="STI Logo" />
+        </a>
+        <a href="https://www.facebook.com/globalcity.sti.edu" target="_blank" title="Facebook">
+          <img src="image-facebook.png" alt="Facebook Icon" />
+        </a>
+        <a href="https://www.instagram.com/sticollegeglobalcity/" target="_blank" title="Instagram">
+          <img src="image-instagram.png" alt="Instagram Icon" />
+        </a>
+      </div>
+
+
+      <!-- CENTER: TEXT -->
+      <div class="footer-text">
+        <p><b>STI Global City Paging System</b></p>
+        <p>&copy; <i>2025 STI College Global City.<br />All rights reserved.</i></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="login-script.js"></script>
+</body>
+</html>

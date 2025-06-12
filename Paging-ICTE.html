@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ICTE | Paging Dashboard</title>
+  <link rel="stylesheet" href="style-paging-system.css" />
+</head>
+
+
+
+<body>
+  <!-- UPPER GAP SPACING -->
+   <div class="top-gap"></div>
+
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="image-sti-global-city.jpg" alt="STI Logo" />
+      <span><b>STI Global City Paging System</b></span>
+    </div>
+    
+
+
+  <!-- NAVIGATION -->
+  <nav>
+      <button class="menu-btn">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+
+
+      <!-- DESKTOP SWITCH LOGIN -->
+      <div class="login-switch">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+
+
+      <!-- MOBILE SWITCH LOGIN -->
+      <a href="javascript:void(0);" class="login-button-mobile mobile-login-link">Login</a>
+    </div>
+  </nav>
+</header>
+
+
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>LOG IN</h5>
+        <span class="close">&times;</span>
+      </div>
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="userid" placeholder="Enter your username" required/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required/>
+        <div class="loginOptions">
+        <div class="remember-me">
+        <input type="checkbox" id="remember" name="remember_me" />
+        <label for="remember">Remember me</label>
+      </div>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+        <button id="submitLogin" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- MAIN LAYOUT -->
+  <div class="container">
+    
+    
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <ul class="sidebar-menu">
+      <li class="menu-item active">
+        <a href="Student-PagingDashboard.html">
+          <img src="icon-home-unclicked.png" alt="Home" />
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="Paging-DBAA.html">
+          <img src="icon-dbaa-unclicked.png" alt="DBAA Icon" />
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="Paging-GE.html">
+          <img src="icon-ge-unclicked.png" alt="GE Icon" />
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="Paging-ICTE.html">
+          <img src="icon-icte-clicked.png" alt="ICTE Icon" />
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="Paging-SHS.html">
+          <img src="icon-shs-unclicked.png" alt="SHS Icon" />
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="Paging-THM.html">
+          <img src="icon-thm-unclicked.png" alt="THM Icon" />
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="helpdesk-container">
+        <div class="helpdesk-card">
+          <div class="helpdesk-header">
+            <h1>ICTE - Paging System Dashboard</h1>
+          </div>
+          <div class="helpdesk-content">
+            <p>Welcome to the STI Global City Paging System Helpdesk!</p><br />
+            <p>Here you can view the list of professors and the available professors in their consultation hours.</p><br />
+            <p>However, the team is currently developing the paging system. Please wait for further notice. Thank you.</p><br />
+            <p>For any inquiries or issues, please reach out to us through the following channels:</p>
+            <ul>
+              <li><strong>Email us:</strong> 
+                <a href="mailto:globalcity.paging@gmail.com">globalcity.paging@gmail.com</a>
+              </li>
+              <li><strong>Contact us:</strong> 
+                <a href="tel:+639123456789">+63 912 345 6789</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>	
+    
+
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="footer-container">
+
+
+      <!-- LEFT: LOGOS AND ICONS -->
+      <div class="footer-logos">
+        <a href="https://www.sti.edu/campuses-details.asp?campus_id=R0xP&gad" target="_blank" title="STI Website">
+          <img src="image-sti-global-city.jpg" alt="STI Logo" />
+        </a>
+        <a href="https://www.facebook.com/globalcity.sti.edu" target="_blank" title="Facebook">
+          <img src="image-facebook.png" alt="Facebook Icon" />
+        </a>
+        <a href="https://www.instagram.com/sticollegeglobalcity/" target="_blank" title="Instagram">
+          <img src="image-instagram.png" alt="Instagram Icon" />
+        </a>
+      </div>
+
+
+      <!-- CENTER: TEXT -->
+      <div class="footer-text">
+        <p><b>STI Global City Paging System</b></p>
+        <p>&copy; <i>2025 STI College Global City.<br />All rights reserved.</i></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="login-script.js"></script>
+</body>
+</html>
